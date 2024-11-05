@@ -1,0 +1,315 @@
+
+2024/11/01 13:42:54 D:/code/go_projects/gin-api/internal/repositories/user.go:21
+[121.655ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hdd','12345678900','dfsdddd','2024-11-01 13:42:54.278','2024-11-01 13:42:54.278',NULL)
+
+2024/11/01 14:14:05 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[20.022ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 14:14:05 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[5.420ms] [rows:1] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 14:23:32 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[2.995ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 14:23:32 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[3.000ms] [rows:1] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 14:30:48 D:/code/go_projects/gin-api/internal/repositories/user.go:38
+[10.996ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hdd1','12345678900','hdd1111','2024-11-01 14:30:48.135','2024-11-01 14:30:48.135',NULL)
+
+2024/11/01 14:36:37 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[8.998ms] [rows:1] SELECT * FROM `users` WHERE name = 'hdd1' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 14:37:22 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[9.000ms] [rows:1] SELECT * FROM `users` WHERE name = 'hdd1' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 14:39:07 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[7.040ms] [rows:1] SELECT * FROM `users` WHERE name = 'hdd1' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:24:02 D:/code/go_projects/gin-api/internal/repositories/user.go:39 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.014ms] [rows:0] SELECT * FROM `users` WHERE id = '{1}' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:29:59 D:/code/go_projects/gin-api/internal/repositories/user.go:39 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.517ms] [rows:0] SELECT * FROM `users` WHERE id = '{1}' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:30:24 D:/code/go_projects/gin-api/internal/repositories/user.go:39 sql: converting argument $1 type: unsupported type models.ID, a struct
+[0.000ms] [rows:0] SELECT * FROM `users` WHERE id = '{1}' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:31:31 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[9.438ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:31:57 D:/code/go_projects/gin-api/internal/repositories/user.go:58
+[34.881ms] [rows:1] UPDATE `users` SET `mobile`='12345678900',`name`='',`password`='hdd1111',`updated_at`='2024-11-01 15:31:57.03' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 15:32:10 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[3.268ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:32:10 D:/code/go_projects/gin-api/internal/repositories/user.go:58
+[6.420ms] [rows:1] UPDATE `users` SET `mobile`='12345678900',`name`='',`password`='222222',`updated_at`='2024-11-01 15:32:10.952' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 15:35:01 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[4.850ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:35:01 D:/code/go_projects/gin-api/internal/repositories/user.go:58
+[3.661ms] [rows:1] UPDATE `users` SET `mobile`='12345678900',`name`='hdd1',`password`='333333',`updated_at`='2024-11-01 15:35:01.386' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 15:35:13 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[3.176ms] [rows:0] SELECT * FROM `users` WHERE Name = 'hdd2' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:35:13 D:/code/go_projects/gin-api/internal/repositories/user.go:50
+[4.008ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hdd2','12345678900','5555555','2024-11-01 15:35:13.268','2024-11-01 15:35:13.268',NULL)
+
+2024/11/01 15:37:50 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[4.242ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:37:50 D:/code/go_projects/gin-api/internal/repositories/user.go:68
+[5.293ms] [rows:1] UPDATE `users` SET `mobile`='12345678900',`name`='hdd1',`password`='3333332312321',`updated_at`='2024-11-01 15:37:50.701' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 15:48:19 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[1.589ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:48:19 D:/code/go_projects/gin-api/internal/repositories/user.go:68
+[5.649ms] [rows:1] UPDATE `users` SET `password`='3333332312321',`updated_at`='2024-11-01 15:48:19.882' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 15:48:38 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[2.305ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:48:38 D:/code/go_projects/gin-api/internal/repositories/user.go:68
+[2.962ms] [rows:1] UPDATE `users` SET `password`='3333332312321',`updated_at`='2024-11-01 15:48:38.843' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 15:48:48 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[4.036ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 15:48:48 D:/code/go_projects/gin-api/internal/repositories/user.go:68
+[1.998ms] [rows:1] UPDATE `users` SET `password`='3333332312321',`updated_at`='2024-11-01 15:48:48.912' WHERE id = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 16:01:32 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[2.000ms] [rows:1] SELECT * FROM `users` WHERE id = 1 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:01:32 D:/code/go_projects/gin-api/internal/repositories/user.go:73
+[7.001ms] [rows:1] UPDATE `users` SET `deleted_at`='2024-11-01 16:01:32.597' WHERE `users`.`id` = 1 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 16:03:10 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[1.879ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:03:10 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[2.381ms] [rows:2] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:08:55 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[0.514ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:08:55 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[3.382ms] [rows:2] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:15:45 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[1.580ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:15:45 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[2.745ms] [rows:2] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:15:52 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[1.990ms] [rows:1] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:15:52 D:/code/go_projects/gin-api/internal/repositories/user.go:73
+[3.999ms] [rows:1] UPDATE `users` SET `deleted_at`='2024-11-01 16:15:52.482' WHERE `users`.`id` = 3 AND `users`.`deleted_at` IS NULL
+
+2024/11/01 16:15:57 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[1.000ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:15:57 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[1.008ms] [rows:1] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:18:20 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[3.837ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:18:20 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[1.095ms] [rows:1] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:18:29 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[0.989ms] [rows:0] SELECT * FROM `users` WHERE Name = 'hdd3' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:18:29 D:/code/go_projects/gin-api/internal/repositories/user.go:50
+[6.002ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hdd3','12345678900','5555555','2024-11-01 16:18:29.249','2024-11-01 16:18:29.249',NULL)
+
+2024/11/01 16:18:32 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[0.996ms] [rows:0] SELECT * FROM `users` WHERE Name = 'hdd4' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:18:32 D:/code/go_projects/gin-api/internal/repositories/user.go:50
+[3.002ms] [rows:1] INSERT INTO `users` (`name`,`mobile`,`password`,`created_at`,`updated_at`,`deleted_at`) VALUES ('hdd4','12345678900','5555555','2024-11-01 16:18:32.634','2024-11-01 16:18:32.634',NULL)
+
+2024/11/01 16:18:36 D:/code/go_projects/gin-api/internal/repositories/user.go:25
+[0.512ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:18:36 D:/code/go_projects/gin-api/internal/repositories/user.go:30
+[1.615ms] [rows:3] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:29:41 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[3.293ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:29:58 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[4.000ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:30:21 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[1.632ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:30:27 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[1.733ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:30:49 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[3.713ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:31:21 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[3.157ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:33:49 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[6.919ms] [rows:0] SELECT * FROM `users` WHERE id = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:34:07 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[4.781ms] [rows:0] SELECT * FROM `users` WHERE `users`.`id` = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:34:57 D:/code/go_projects/gin-api/internal/repositories/user.go:39 record not found
+[1.023ms] [rows:0] SELECT * FROM `users` WHERE `users`.`id` = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:39:51 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[3.715ms] [rows:1] SELECT * FROM `users` WHERE `users`.`id` = 5 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:41:05 D:/code/go_projects/gin-api/internal/repositories/user.go:39
+[4.855ms] [rows:1] SELECT * FROM `users` WHERE ID = 5 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:43:30 D:/code/go_projects/gin-api/internal/repositories/user.go:41
+[7.312ms] [rows:1] SELECT * FROM `users` WHERE ID = 5 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/01 16:43:32 D:/code/go_projects/gin-api/internal/repositories/user.go:27
+[0.000ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:43:32 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[4.009ms] [rows:3] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:44:16 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.571ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:44:16 D:/code/go_projects/gin-api/internal/repositories/user.go:31
+[3.206ms] [rows:3] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:44:19 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.000ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:44:19 D:/code/go_projects/gin-api/internal/repositories/user.go:31
+[3.999ms] [rows:3] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:44:20 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[0.000ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:44:20 D:/code/go_projects/gin-api/internal/repositories/user.go:31
+[0.000ms] [rows:3] SELECT * FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:45:16 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.577ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:45:16 D:/code/go_projects/gin-api/internal/repositories/user.go:33
+[3.144ms] [rows:3] SELECT `id`,`name`,`mobile`,`password` FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 16:45:56 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[2.082ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 16:45:56 D:/code/go_projects/gin-api/internal/repositories/user.go:33
+[2.643ms] [rows:3] SELECT `id`,`name`,`mobile`,`password` FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/01 17:07:21 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.158ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 17:07:21 D:/code/go_projects/gin-api/internal/repositories/user.go:33 Error 1146 (42S02): Table 'yto_publish.user_list_responses' doesn't exist
+[6.766ms] [rows:0] SELECT `id`,`name`,`mobile`,Password FROM `user_list_responses` LIMIT 10
+
+2024/11/01 17:08:24 D:/code/go_projects/gin-api/internal/repositories/user.go:26 Error 1146 (42S02): Table 'yto_publish.user_list_responses' doesn't exist
+[1.572ms] [rows:0] SELECT count(*) FROM `user_list_responses`
+
+2024/11/01 17:08:58 D:/code/go_projects/gin-api/internal/repositories/user.go:26 Error 1146 (42S02): Table 'yto_publish.user_list_responses' doesn't exist
+[1.010ms] [rows:0] SELECT count(*) FROM `user_list_responses`
+
+2024/11/01 17:23:08 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[2.002ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 17:23:08 D:/code/go_projects/gin-api/internal/repositories/user.go:33 Error 1146 (42S02): Table 'yto_publish.user_list_responses' doesn't exist
+[2.998ms] [rows:0] SELECT `id`,`name`,`mobile` FROM `user_list_responses` LIMIT 10
+
+2024/11/01 17:24:09 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.998ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 17:24:09 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[1.000ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/01 17:28:08 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[2.740ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 17:28:08 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[2.099ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/01 17:59:49 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[2.999ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/01 17:59:49 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[2.011ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/01 17:59:53 D:/code/go_projects/gin-api/internal/repositories/user.go:42
+[12.000ms] [rows:1] SELECT * FROM `users` WHERE ID = 5 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+
+2024/11/04 16:50:46 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[114.747ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 16:50:46 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[19.709ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/04 16:50:53 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.003ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 16:50:53 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[1.992ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/04 16:51:09 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[1.002ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 16:51:09 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[3.517ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/04 16:57:32 D:/code/go_projects/gin-api/internal/repositories/user.go:26
+[8.648ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 16:57:32 D:/code/go_projects/gin-api/internal/repositories/user.go:32
+[1.039ms] [rows:5] SELECT * FROM `users` LIMIT 10
+
+2024/11/04 16:57:48 D:/code/go_projects/gin-api/internal/repositories/user.go:40
+[7.999ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 16:57:48 D:/code/go_projects/gin-api/internal/repositories/user.go:46
+[4.034ms] [rows:3] SELECT `users`.`id`,`users`.`name`,`users`.`mobile` FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/04 16:58:48 D:/code/go_projects/gin-api/internal/repositories/user.go:40
+[3.850ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 16:58:48 D:/code/go_projects/gin-api/internal/repositories/user.go:46
+[3.143ms] [rows:3] SELECT `users`.`id`,`users`.`name`,`users`.`mobile` FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/04 17:01:07 D:/code/go_projects/gin-api/internal/repositories/user.go:40 SLOW SQL >= 200ms
+[17492.011ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 17:01:07 D:/code/go_projects/gin-api/internal/repositories/user.go:40
+[1.000ms] [rows:1] SELECT count(*) FROM `users` WHERE `users`.`deleted_at` IS NULL
+
+2024/11/04 17:01:07 D:/code/go_projects/gin-api/internal/repositories/user.go:46
+[2.999ms] [rows:3] SELECT `users`.`id`,`users`.`name`,`users`.`mobile` FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/04 17:01:07 D:/code/go_projects/gin-api/internal/repositories/user.go:46
+[16.006ms] [rows:3] SELECT `users`.`id`,`users`.`name`,`users`.`mobile` FROM `users` WHERE `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/04 17:02:12 D:/code/go_projects/gin-api/internal/repositories/user.go:40
+[19.687ms] [rows:1] SELECT count(*) FROM `users` WHERE name like '%hdd%' AND `users`.`deleted_at` IS NULL
+
+2024/11/04 17:02:12 D:/code/go_projects/gin-api/internal/repositories/user.go:46
+[2.737ms] [rows:3] SELECT `users`.`id`,`users`.`name`,`users`.`mobile` FROM `users` WHERE name like '%hdd%' AND `users`.`deleted_at` IS NULL LIMIT 10
+
+2024/11/04 17:02:37 D:/code/go_projects/gin-api/internal/repositories/user.go:40
+[2.123ms] [rows:1] SELECT count(*) FROM `users` WHERE name like '%hdd1%' AND `users`.`deleted_at` IS NULL
+
+2024/11/04 17:02:37 D:/code/go_projects/gin-api/internal/repositories/user.go:46
+[2.140ms] [rows:1] SELECT `users`.`id`,`users`.`name`,`users`.`mobile` FROM `users` WHERE name like '%hdd1%' AND `users`.`deleted_at` IS NULL LIMIT 10

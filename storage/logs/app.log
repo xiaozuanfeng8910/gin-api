@@ -1,0 +1,61 @@
+[2024-11-01 14:39:07.530]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 14:39:07.537]	error	handlers/user.go:77	创建用户失败	{"error": "用户已存在"}
+[2024-11-01 15:23:56.422]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:24:03.502]	error	handlers/user.go:121	更新用户失败:sql: converting argument $1 type: unsupported type models.ID, a struct
+[2024-11-01 15:29:59.868]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:29:59.870]	error	handlers/user.go:121	更新用户失败:sql: converting argument $1 type: unsupported type models.ID, a struct
+[2024-11-01 15:30:12.130]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:31:18.444]	error	handlers/user.go:121	更新用户失败:sql: converting argument $1 type: unsupported type models.ID, a struct
+[2024-11-01 15:31:28.009]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:32:06.102]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:34:50.174]	error	validation/validator.go:32	数据校验失败	{"error": "Key: 'UserUpdateRequest.Name' Error:Field validation for 'Name' failed on the 'required' tag\nKey: 'UserUpdateRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag"}
+[2024-11-01 15:34:50.174]	error	handlers/user.go:105	数据校验失败:字段 Name 是必填项; 字段 Password 的最小长度为 6
+[2024-11-01 15:34:57.060]	error	validation/validator.go:32	数据校验失败	{"error": "Key: 'UserUpdateRequest.Password' Error:Field validation for 'Password' failed on the 'min' tag"}
+[2024-11-01 15:34:57.061]	error	handlers/user.go:105	数据校验失败:字段 Password 的最小长度为 6
+[2024-11-01 15:35:01.380]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:35:13.264]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:37:50.695]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:41:50.569]	error	validation/validator.go:32	数据校验失败	{"error": "Key: 'UserUpdateRequest.Name' Error:Field validation for 'Name' failed on the 'required' tag\nKey: 'UserUpdateRequest.Mobile' Error:Field validation for 'Mobile' failed on the 'required' tag"}
+[2024-11-01 15:41:50.569]	error	handlers/user.go:105	数据校验失败:字段 Name 是必填项; 字段 Mobile 是必填项
+[2024-11-01 15:42:24.070]	error	validation/validator.go:32	数据校验失败	{"error": "Key: 'UserUpdateRequest.Name' Error:Field validation for 'Name' failed on the 'min' tag\nKey: 'UserUpdateRequest.Mobile' Error:Field validation for 'Mobile' failed on the 'numeric' tag"}
+[2024-11-01 15:42:24.070]	error	handlers/user.go:105	数据校验失败:字段 Name 的最小长度为 3; 字段 Mobile 必须是数值
+[2024-11-01 15:43:26.841]	error	validation/validator.go:32	数据校验失败	{"error": "Key: 'UserUpdateRequest.Name' Error:Field validation for 'Name' failed on the 'min' tag\nKey: 'UserUpdateRequest.Mobile' Error:Field validation for 'Mobile' failed on the 'numeric' tag"}
+[2024-11-01 15:43:26.842]	error	handlers/user.go:105	数据校验失败:字段 Name 的最小长度为 3; 字段 Mobile 必须是数值
+[2024-11-01 15:48:19.878]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:48:38.840]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 15:48:48.907]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 16:03:10.477]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:08:55.837]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:15:45.172]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:15:57.429]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:18:20.424]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:18:29.245]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 16:18:32.631]	info	validation/validator.go:35	数据校验通过
+[2024-11-01 16:18:36.993]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:31:21.404]	error	handlers/user.go:69	获取用户详情失败:record not found
+[2024-11-01 16:33:49.782]	error	handlers/user.go:69	获取用户详情失败:record not found
+[2024-11-01 16:34:10.485]	error	handlers/user.go:69	获取用户详情失败:record not found
+[2024-11-01 16:39:50.172]	error	handlers/user.go:69	获取用户详情失败:record not found
+[2024-11-01 16:43:32.486]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:44:16.416]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:44:19.025]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:44:20.254]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:45:16.491]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 16:45:56.755]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:07:21.499]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:08:24.839]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:08:58.909]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:23:08.237]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:24:09.921]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:28:08.296]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-01 17:59:49.476]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:50:46.302]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:50:53.466]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:51:09.105]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:51:47.984]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:57:45.530]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:58:09.679]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 16:58:56.462]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 17:00:50.387]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 17:02:04.250]	info	handlers/user.go:39	获取用户列表接口
+[2024-11-04 17:02:30.884]	info	handlers/user.go:39	获取用户列表接口
